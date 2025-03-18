@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiny Forager - 3D Multiplayer Game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="ui">
+        <h2>Mushroom Forager</h2>
+        <p>Score: <span id="score">0</span></p>
+        <p>Position: <span id="position">0, 0, 0</span></p>
+    </div>
+    
+    <div id="inventory">
+        <h3>Inventory:</h3>
+        <div id="inventory-items"></div>
+    </div>
+    
+    <div id="player-list">
+        <h3>Players Online:</h3>
+        <ul id="players"></ul>
+    </div>
+
+    <div id="login-screen">
+        <div class="login-container">
+            <h1>Mushroom Forager</h1>
+            <input type="text" id="player-name" placeholder="Enter your name">
+            <button id="start-game">Start Foraging</button>
+        </div>
+    </div>
+
+    <!-- Loading libraries -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
